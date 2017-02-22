@@ -1,0 +1,198 @@
+@import "base";
+@import "mixins";
+body {
+    background: $color__background;
+    color: $color__text;
+    font-family: $base__font;
+    font-size: $base__font-size;
+}
+
+.search-container {
+    height: 100%;
+    .form-group {
+        width: 90%;
+        margin-left: calc(100vw-100%);
+    }
+    .vhCenter {
+        @include vh-center;
+    }
+    .hCenter {
+        @include h-center;
+    }
+}
+
+form .search-box {
+    background: $color__search;
+}
+
+button {
+    margin-top: 6px;
+    padding-right: 42px;
+    width: 100%;
+    height: 36px;
+    background-color: $button__background;
+    span {
+        padding-right: 5px;
+    }
+    @include random-bxs;
+}
+
+.search-results {
+    width: 100%;
+    @include h-center;
+    h1 {
+        margin: 0;
+        line-height: calc-em(24);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 800;
+        text-align: left;
+    }
+    .results-text {
+        margin: 0;
+        padding: 10px 0 20px 0;
+        font-family: $base__article;
+        font-size: calc-em(18);
+        line-height: calc-em(27)
+    }
+    a {
+        color: $color__article-link;
+        button {
+            box-shadow: none;
+        }
+        .results-link {
+            background: $color__article-bg;
+            font-size: calc-em(18);
+            width: 100%;
+            margin: 0;
+            padding: 10px 0 15px 0;
+            &:hover {
+                text-decoration: underline;
+                color: $color__article-link;
+            }
+        }
+    }
+}
+
+.search-items {
+    background: $color__article-bg;
+    margin-bottom: 20px;
+    padding: 20px 40px 20px 40px;
+    width: 100%;
+    opacity: 1;
+    @include article-bxs;
+}
+
+.search-results {
+    .search-items.ng-enter {
+        @include animation(fadeInUp 0.75s);
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    form {
+        .search-box {
+            height: 40px;
+            font-size: calc-em(16);
+        }
+        .glyphicon.glyphicon-search {
+            padding-top: 3px;
+            font-size: calc-em(20);
+        }
+        button {
+            margin-top: 6px;
+            padding-right: 42px;
+            height: 40px;
+        }
+        .btn {
+            font-size: calc-em(16);
+        }
+    }
+    .search-results {
+        margin-top: 40px;
+        h1 {
+            line-height: calc-em(22);
+            font-size: calc-em(42);
+        }
+        .results-text {
+            font-size: calc-em(20);
+            line-height: calc-em(27)
+        }
+        a .results-link {
+            font-size: calc-em(20);
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    form {
+        .search-box {
+            height: 55px;
+            font-size: calc-em(22);
+        }
+        .glyphicon.glyphicon-search {
+            padding-top: 12px;
+            font-size: calc-em(24);
+        }
+        button {
+            margin-top: 6px;
+            padding-right: 42px;
+            height: 55px;
+        }
+        .btn {
+            font-size: calc-em(22);
+        }
+    }
+    .search-results {
+        margin-top: 50px;
+        h1 {
+            line-height: calc-em(22);
+            font-size: calc-em(50);
+        }
+        .results-text {
+            font-size: calc-em(24);
+            line-height: calc-em(25)
+        }
+        a .results-link {
+            font-size: calc-em(24);
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation:portrait) {
+    form {
+        .search-box {
+            height: 50px;
+            font-size: calc-em(18);
+        }
+        .glyphicon.glyphicon-search {
+            padding-top: 10px;
+            font-size: calc-em(22);
+        }
+        button {
+            margin-top: 6px;
+            padding-right: 42px;
+            height: 50px;
+        }
+        .btn {
+            font-size: calc-em(18);
+        }
+    }
+    .search-results {
+        margin-top: -15px;
+        h1 {
+            line-height: calc-em(22);
+            font-size: calc-em(40);
+        }
+        .results-text {
+            font-size: calc-em(22);
+            line-height: calc-em(25)
+        }
+        a .results-link {
+            font-size: calc-em(20);
+            margin-top: 1px;
+        }
+    }
+}

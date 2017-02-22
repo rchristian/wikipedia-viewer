@@ -1,0 +1,17 @@
+$color__background: #e0e0e0;
+$color__text: #4B5043;
+$color__search: #f5f5f5;
+$color__article-bg: #ffffff;
+$color__article-link:#00bfb2;
+$base__font: "Open Sans",
+"Helvetica",
+"Arial",
+sans-serif;
+$base__font-size: 15;
+$base__article: "Gentium Basic",
+"Times New Roman",
+serif;
+$button__background: $color__search;
+@function calc-em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}

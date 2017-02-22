@@ -1,0 +1,23 @@
+<div class="container search-container animated fadeIn">
+    <div class="form-group has-feedback" ng-class="$ctrl.searchAlign">
+        <form ng-submit="$ctrl.search()" id="search-form">
+            <input type="text" placeholder="Search Wikipedia" ng-model="$ctrl.searchQuery" class="search-box form-control" required />
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            <button type="button" ng-click="$ctrl.openRandom()" class="btn">
+                <span>Random Article</span>
+                <i class="glyphicon glyphicon-random"></i>
+            </button>
+        </form>
+        <div class="container article-container">
+            <div class="search-results">
+                <div ng-repeat="result in $ctrl.results" class="search-items animated">
+                    <h1>{{result.title}}</h1>
+                    <p class="results-text">{{result.text}}</p>
+                    <a ng-href="#" ng-click="ctrl.openArticles(result.link)">
+                        <button class="btn results-link text-center">Read more...</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

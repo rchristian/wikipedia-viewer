@@ -1,0 +1,25 @@
+{
+  "name": "wikipedia-viewer",
+  "description": "Search Wikipedia for articles or view a random article in a new window.",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon app/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "~4.14.0",
+    "fs": "0.0.1-security",
+    "morgan": "^1.7.0",
+    "request": "^2.79.0",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "request-debug": "^0.2.0",
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
