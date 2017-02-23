@@ -17,8 +17,8 @@ app.use(morgan("combined", {
     }
 }));
 
-app.use(express.static(path.join(__dirname, "/.")));
-app.use(favicon(__dirname + "/app/assets/img/favicon.ico"));
+app.use(express.static(path.join(__dirname, "/")));
+app.use(favicon(__dirname + "/assets/img/favicon.ico"));
 
 app.use(function(req, res, next) {
     console.log("/" + req.method);
