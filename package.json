@@ -3,7 +3,10 @@
   "description": "Search Wikipedia for articles or view a random article in a new window.",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon app/server.js"
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "4.4.3"
   },
   "private": true,
   "dependencies": {
