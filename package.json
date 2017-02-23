@@ -9,6 +9,7 @@
     "node": "4.4.3"
   },
   "private": true,
+  "author": "Rachel Christian",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "~4.14.0",
