@@ -21,13 +21,14 @@ body {
     }
 }
 
-form .search-box {
-    background: $color__search;
-}
-
-form .glyphicon-search {
-    cursor: pointer;
-    pointer-events: all;
+form {
+    .search-box {
+        background: $color__search;
+    }
+    .glyphicon-search {
+        cursor: pointer;
+        pointer-events: all;
+    }
 }
 
 button {
