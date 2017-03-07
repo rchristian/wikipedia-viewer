@@ -1,6 +1,6 @@
 <div class="container search-container animated fadeIn">
     <div class="form-group has-feedback" ng-class="$ctrl.searchAlign">
-        <form ng-submit="$ctrl.search()" id="search-form">
+        <form ng-submit="$ctrl.search()" name="wikiSearch" id="search-form">
             <input type="text" placeholder="Search Wikipedia" ng-model="$ctrl.searchQuery" class="search-box form-control" required />
             <span class="glyphicon glyphicon-search form-control-feedback" novalidate ng-click="wikiSearch.$valid && $ctrl.search()"></span>
             <button type="button" ng-click="$ctrl.openRandom()" class="btn">
