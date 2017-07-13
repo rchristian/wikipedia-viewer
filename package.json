@@ -6,7 +6,7 @@
     "start": "node app/server.js"
   },
   "engines": {
-    "node": "4.4.3"
+    "node": "^6.11.1"
   },
   "private": true,
   "author": "Rachel Christian",
@@ -19,11 +19,11 @@
     "serve-favicon": "^2.3.2"
   },
   "devDependencies": {
-    "request-debug": "^0.2.0",
-    "browser-sync": "^2.18.7",
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-nodemon": "^2.2.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "request-debug": "^0.2.0"
   }
 }
