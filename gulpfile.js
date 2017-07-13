@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 
 var reload = browserSync.reload;
 
-gulp.task('default', ['browserSync'], function () {
+gulp.task('default', ['watch'], function () {
 });
 
 gulp.task('browserSync', ['nodemon'], function() {
