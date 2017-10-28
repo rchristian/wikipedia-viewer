@@ -7,6 +7,7 @@
 			'ngAnimate',
 			//Custome modules
 			'app.core',
+			'app.filter',
 			'app.wikiSearch'
 		]);
 })();
