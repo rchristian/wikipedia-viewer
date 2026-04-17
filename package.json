@@ -11,7 +11,7 @@
   "private": true,
   "author": "Rachel Christian",
   "dependencies": {
-    "body-parser": "^2.2.0",
+    "body-parser": "^2.2.2",
     "express": "^5.2.1",
     "fs": "0.0.1-security",
     "hoek": "^6.1.3",
